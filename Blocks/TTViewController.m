@@ -180,6 +180,11 @@ typedef  void (^PatientBlock)(TTPatient * patient);
     return round(10 * new) / 10;
 }
 
+- (void)testBlockTypeMethod:(TestBlockParam)testblock {
+
+    testblock(@"block from method");
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
