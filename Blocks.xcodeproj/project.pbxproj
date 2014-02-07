@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56313CC18A50AD8001FA779 /* TTStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = A56313CB18A50AD8001FA779 /* TTStudent.m */; };
+		A56313D218A54327001FA779 /* TTPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = A56313D018A54327001FA779 /* TTPatient.m */; };
 		A5D77CCF18A4D44F008A3FFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D77CCE18A4D44F008A3FFB /* Foundation.framework */; };
 		A5D77CD118A4D44F008A3FFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D77CD018A4D44F008A3FFB /* CoreGraphics.framework */; };
 		A5D77CD318A4D44F008A3FFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D77CD218A4D44F008A3FFB /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A56313CA18A50AD8001FA779 /* TTStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStudent.h; sourceTree = "<group>"; };
+		A56313CB18A50AD8001FA779 /* TTStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStudent.m; sourceTree = "<group>"; };
+		A56313CF18A54327001FA779 /* TTPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPatient.h; sourceTree = "<group>"; };
+		A56313D018A54327001FA779 /* TTPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPatient.m; sourceTree = "<group>"; };
 		A5D77CCB18A4D44F008A3FFB /* Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D77CCE18A4D44F008A3FFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5D77CD018A4D44F008A3FFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +123,10 @@
 				A5D77CE018A4D44F008A3FFB /* Main.storyboard */,
 				A5D77CE318A4D44F008A3FFB /* TTViewController.h */,
 				A5D77CE418A4D44F008A3FFB /* TTViewController.m */,
+				A56313CA18A50AD8001FA779 /* TTStudent.h */,
+				A56313CB18A50AD8001FA779 /* TTStudent.m */,
+				A56313CF18A54327001FA779 /* TTPatient.h */,
+				A56313D018A54327001FA779 /* TTPatient.m */,
 				A5D77CE618A4D44F008A3FFB /* Images.xcassets */,
 				A5D77CD518A4D44F008A3FFB /* Supporting Files */,
 			);
@@ -251,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D77CDF18A4D44F008A3FFB /* TTAppDelegate.m in Sources */,
+				A56313D218A54327001FA779 /* TTPatient.m in Sources */,
+				A56313CC18A50AD8001FA779 /* TTStudent.m in Sources */,
 				A5D77CDB18A4D44F008A3FFB /* main.m in Sources */,
 				A5D77CE518A4D44F008A3FFB /* TTViewController.m in Sources */,
 			);
@@ -461,6 +473,7 @@
 				A5D77CFF18A4D44F008A3FFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5D77D0018A4D44F008A3FFB /* Build configuration list for PBXNativeTarget "BlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				A5D77D0218A4D44F008A3FFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
