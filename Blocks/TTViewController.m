@@ -106,7 +106,6 @@ typedef  void (^PatientBlock)(TTPatient * patient);
     for (TTStudent *obj in studentArray) {
         NSLog(@"%@ %@", obj.name ,obj.secondName);
     }
-
     
 #pragma mark - Level Master
 //    Мастер.
@@ -116,7 +115,7 @@ typedef  void (^PatientBlock)(TTPatient * patient);
 //    12. Теперь когда пациентам поплохеет, они должны вызывать блок, а в блоке нужно принимать решения что делать (доктор не нужен делайте все в апп делегате)
     
     NSMutableArray *arrayWithPatient = [[NSMutableArray alloc]init];
-    NSInteger patientCount = 40;
+    NSInteger patientCount = 10;
     
     for (int i = 0; i < patientCount; i++) {
         TTPatient *patients = [[TTPatient alloc]initPatientWithName:[NSString stringWithFormat:@"patient%d",i]
@@ -170,7 +169,6 @@ typedef  void (^PatientBlock)(TTPatient * patient);
                                                 patientTemperature:[self randFloatMin:MIN_TEMP andMax:MAX_TEMP]
                                                       problemPlace:(TTProblem)arc4random_uniform(3) patientBlock:patient];
         
-        
         [newarrayWithPatient addObject:patients];
     }
     
@@ -180,11 +178,6 @@ typedef  void (^PatientBlock)(TTPatient * patient);
     CGFloat diff = high - low;
     CGFloat new = (((CGFloat) rand() / RAND_MAX) * diff) + low;
     return round(10 * new) / 10;
-}
-
-- (void)testBlockTypeMethod:(TestBlockParam)testblock {
-
-    testblock(@"block from method");
 }
 
 - (void)didReceiveMemoryWarning

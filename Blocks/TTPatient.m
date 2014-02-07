@@ -25,20 +25,19 @@
         _name = name;
         _temperature = temperature;
         _problemPlace = problem;
-        
-        [self performSelector:@selector(patientBlockMethod:) withObject:patientBlock afterDelay:arc4random()%11 - 5];
+        CGFloat delay = arc4random()%11;
+        NSLog(@"%f",delay);
+        [self performSelector:@selector(patientBlockMethod:) withObject:patientBlock afterDelay:delay];
     }
     return self;
 }
 
 - (void)patientBlockMethod:(void (^)(TTPatient *))patient {
-    
     patient(self);
     
 }
 
 - (void)patientBad:(void (^)(TTPatient *))patientBlock {
-    
     patientBlock(self);
     
 }
